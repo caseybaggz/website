@@ -1,38 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Howzit? :wave: I'm Casey Baggz
 
-## Getting Started
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/caseybaggz/)
+[![Website Badge](https://img.shields.io/badge/Website-3b5998?style=flat-square&logo=google-chrome&logoColor=white)](https://caseybaggz.dev/)
 
-First, run the development server:
+I'm the Principal Engineer, Admin, and core Maintainer of the Pluralsight Pando
+Design system.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## What I'm up to?
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- :deciduous_tree: Building the [Pando Ecosystem](https://design.pluralsight.com)
+- :skull: Running a local Hellfire Club DnD campaign
+- :crossed_swords: Playing Elden Ring or some other FromSoftware game
+- :muscle: Showing the world that you can get jacked by without eating meat
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## What you should know
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+My identity is not based on my work-life. I only live and breathe software
+engineering during **my** daily peak hours. This lifestyle has led me to grow in
+a way that has allowed me to advance faster than your average engineer while not
+becoming a workaholic using the **excuse**
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+> "I love what I do."
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+You can love what you do and still have a personal life and advance. However,
+if you do prefer that life, I respect that - but I'm not going to share that
+choice ever. There is a reason why you consistently hear that people on thier
+death-bed say:
 
-## Learn More
+> "I wish I had worked less and spent more time with my friends/family."
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Work smarter, not harder. The 9-5 work-based culture is outdated and your brain
+only has so much cognitive energy to use each day. This means that by working
+more than 6-8 hours...you are doing more harm than good - both for your team
+and most importantly, yourself.
