@@ -6,9 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky install"
   },
   "dependencies": {
+    "@pluralsight/headless-styles": "^0.4.1-next-9a6977",
+    "@pluralsight/icons": "^0.4.1-next-9a6977",
+    "@pluralsight/react-utils": "^0.4.1-next-9a6977",
     "@types/node": "18.14.6",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
@@ -18,5 +22,12 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.5"
-  }
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.7.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "prettier": "2.8.4"
+  },
+  "lint-staged": "node .lintstagedrc.js"
 }
