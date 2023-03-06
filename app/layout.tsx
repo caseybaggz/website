@@ -1,3 +1,6 @@
+import Nav from '@/components/Nav'
+import './global.css'
+
 const TITLE = 'Casey Baggz | Creative Engineer'
 const DESC =
   'The official website for Principal Engineer, Admin and core maintainer of the Pando Design system by Pluralsight.'
@@ -12,15 +15,16 @@ export const metadata = {
     siteName: TITLE,
     images: [
       {
-        url: 'https://nextjs.org/og.png',
-        width: 800,
+        url: 'https://user-images.githubusercontent.com/4819738/223263615-2c5b52ee-fb9b-4795-b5ee-6cdf28a7888b.png',
+        alt: 'Promo poster image',
         height: 600,
+        width: 800,
       },
       {
-        url: 'https://nextjs.org/og-alt.png',
-        width: 1800,
+        url: 'https://user-images.githubusercontent.com/4819738/223265337-56947cda-b2ca-44f0-908b-3bcacc7f4c84.png',
+        alt: 'Promo poster image',
         height: 1600,
-        alt: 'My custom alt',
+        width: 1800,
       },
     ],
     locale: 'en-US',
@@ -52,7 +56,10 @@ export default function RootLayout({
           href="https://cdn.jsdelivr.net/npm/@pluralsight/design-tokens@next/npm/normalize/normalize.css"
         />
       </head>
-      <body>{children}</body>
+      <body className="app">
+        {children}
+        <Nav />
+      </body>
     </html>
   )
 }
