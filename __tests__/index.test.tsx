@@ -4,6 +4,6 @@ import Home from '../app/page'
 describe('Home', () => {
   it('renders a heading', () => {
     render(<Home />)
-    expect(screen.getByText(/get started by editing/i)).toBeInTheDocument()
+    expect(screen.getByText(/Hello there/i)).toBeInTheDocument()
   })
 })

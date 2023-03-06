@@ -1,0 +1,17 @@
+.container {
+  background-color: var(--ps-surface-weak);
+  bottom: 0;
+  height: 4rem;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navList {
+  align-items: center;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  justify-items: center;
+  padding-inline-start: 0;
+}
