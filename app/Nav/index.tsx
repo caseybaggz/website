@@ -1,9 +1,9 @@
-// If Headless-styles shipped CSS, Server components will work
-// see: https://beta.nextjs.org/docs/styling/css-in-js
 'use client'
 
+// This could be a server component
+
 import {
-  getButtonProps,
+  getTextLinkProps,
   getGridProps,
   getGridItemProps,
   getIconProps,
@@ -14,8 +14,12 @@ import { type PropsWithChildren } from 'react'
 import styles from './nav.module.css'
 
 function NavListItem(props: PropsWithChildren<{}>) {
-  const gridItem = getGridItemProps({ colSpan: 6 })
-  return <li {...gridItem}>{props.children}</li>
+  const { className, style } = getGridItemProps({ colSpan: 6 })
+  return (
+    <li className={`${className} ${styles.listItem}`} style={style}>
+      {props.children}
+    </li>
+  )
 }
 
 interface NavLinkProps {
@@ -24,13 +28,13 @@ interface NavLinkProps {
 }
 
 function NavLink(props: PropsWithChildren<NavLinkProps>) {
-  const { button, iconOptions } = getButtonProps({
-    usage: 'text',
+  const { link, iconOptions } = getTextLinkProps({
+    href: props.href,
   })
   const Icon = props.icon
 
   return (
-    <Link {...button} href={props.href}>
+    <Link {...link}>
       <Icon {...getIconProps(iconOptions)} />
       {props.children}
     </Link>

@@ -1,0 +1,9 @@
+.feature {
+  background-color: var(--ps-surface-inverse);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  color: var(--ps-text-inverse);
+  margin-top: 2rem;
+  min-height: calc(100svh - 5.25rem);
+  padding: 1rem;
+}
