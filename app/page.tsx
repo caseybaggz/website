@@ -1,17 +1,27 @@
-// import Image from 'next/image'
-import { Inter } from 'next/font/google'
-// import styles from './page.module.css'
-import Nav from '@/components/Nav'
-
-const inter = Inter({ subsets: ['latin'] })
+import styles from './page.module.css'
 
 export default function Home() {
   return (
     <main>
-      <h1>Hello there</h1>
-
-      <section>
+      <header>
+        <h1>Hello there</h1>
         <p>Here is some content</p>
+      </header>
+
+      <section className={styles.feature}>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+          maxime praesentium, voluptatibus a dolorem quae? Placeat, voluptates
+          similique fugit alias porro blanditiis est quia animi voluptatibus
+          unde ut consequatur velit.
+        </p>
+
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+          maxime praesentium, voluptatibus a dolorem quae? Placeat, voluptates
+          similique fugit alias porro blanditiis est quia animi voluptatibus
+          unde ut consequatur velit.
+        </p>
       </section>
     </main>
   )

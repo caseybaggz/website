@@ -10,8 +10,16 @@
 
 .navList {
   align-items: center;
+  height: 100%;
   margin-block-end: 0;
   margin-block-start: 0;
   justify-items: center;
   padding-inline-start: 0;
+}
+
+.listItem {
+  align-items: center;
+  display: inherit;
+  justify-content: center;
+  width: 100%;
 }

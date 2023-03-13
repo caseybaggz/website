@@ -1,4 +1,4 @@
-import Nav from '@/components/Nav'
+import Nav from '@app/Nav'
 import './global.css'
 
 const TITLE = 'Casey Baggz | Creative Engineer'
