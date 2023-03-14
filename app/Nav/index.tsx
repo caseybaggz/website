@@ -1,12 +1,8 @@
-'use client'
-
-// This could be a server component
-
 import {
-  getTextLinkProps,
-  getGridProps,
-  getGridItemProps,
-  getIconProps,
+  getJSTextLinkProps,
+  getJSGridProps,
+  getJSGridItemProps,
+  getJSIconProps,
 } from '@pluralsight/headless-styles'
 import { HomeIcon, BriefcaseIcon } from '@pluralsight/icons'
 import Link from 'next/link'
@@ -14,9 +10,9 @@ import { type PropsWithChildren } from 'react'
 import styles from './nav.module.css'
 
 function NavListItem(props: PropsWithChildren<{}>) {
-  const { className, style } = getGridItemProps({ colSpan: 6 })
+  const gridItemProps = getJSGridItemProps({ colSpan: 6 })
   return (
-    <li className={`${className} ${styles.listItem}`} style={style}>
+    <li className={styles.listItem} style={gridItemProps.styles}>
       {props.children}
     </li>
   )
@@ -28,25 +24,26 @@ interface NavLinkProps {
 }
 
 function NavLink(props: PropsWithChildren<NavLinkProps>) {
-  const { link, iconOptions } = getTextLinkProps({
+  const linkProps = getJSTextLinkProps({
     href: props.href,
   })
   const Icon = props.icon
+  const iconProps = getJSIconProps(linkProps.iconOptions)
 
   return (
-    <Link {...link}>
-      <Icon {...getIconProps(iconOptions)} />
+    <Link style={linkProps.styles} {...linkProps.link}>
+      <Icon {...iconProps.a11yProps} style={iconProps.styles} />
       {props.children}
     </Link>
   )
 }
 
 export default function Nav() {
-  const { className, ...gridProps } = getGridProps({ cols: 12, gap: 6 })
+  const gridProps = getJSGridProps({ cols: 12, gap: 6 })
 
   return (
     <nav className={styles.container}>
-      <ul className={`${className} ${styles.navList}`} {...gridProps}>
+      <ul className={styles.navList} style={gridProps.styles}>
         <NavListItem>
           <NavLink href="/" icon={HomeIcon}>
             Home
